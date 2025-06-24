@@ -1,0 +1,132 @@
+.header{
+  position: fixed;
+  top: 0;
+  left : 0;
+   z-index: 1000;
+   display: flex;
+   height: 80vh;
+    flex-direction: column;
+  justify-content: space-between;
+  width : 35%;
+  padding : 96px;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  background-color: #0f172a;  
+  pointer-events: none;
+}.header * {
+  pointer-events: auto; /* Re-enable buttons, links, etc. */
+}
+
+.header-name {
+  color: #E2E8F0;
+  font-size: 48px;
+}
+
+.header-pic {
+  border: 3px solid #f1c40f;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  margin: 2rem auto 0 auto; /* Center the image */
+  
+}
+
+.header-para {
+  
+  color: #94A3B8;
+  font-size: 1rem;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  
+}
+
+.header-icons {
+    
+  color: #94A3B8;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.header-icons:hover {
+  color: #E2E8F0;
+}
+
+
+
+@media (max-width: 768px) {
+  .header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+
+    height: auto; 
+
+    padding: 1rem 0.5rem; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+
+    background-color: #0f172a; 
+    box-sizing: border-box; 
+    
+    border-bottom: none; 
+  }
+
+  .header-left-section { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 0.75rem; 
+    width: 100%; 
+  }
+
+  .header-name {
+    font-size: 1.5rem; 
+    margin-bottom: 0.5rem;
+    white-space: nowrap; 
+    text-align: center; 
+    line-height: 1.2;
+  }
+
+  .header-pic {
+    display: block; 
+    width: 60px; 
+    height: 60px;
+    margin: 0; 
+    border: 2px solid #f1c40f; 
+    border-radius: 100%; 
+  }
+
+  .header-para {
+    display: none; 
+  }
+
+  .socialmedia {
+    display: flex;
+    justify-content: center; 
+    gap: 0.8rem;
+    margin-top: 0;
+    flex-wrap: wrap; 
+    flex-shrink: 0;  
+    padding: 0 0.5rem; 
+  }
+
+  .header-icons {
+    font-size: 24px; 
+    padding: 0.1rem; 
+  }
+  .layout {
+    flex-direction: column; 
+  }
+
+  
+}
+  
+
+  

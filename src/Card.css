@@ -1,0 +1,79 @@
+.card {
+  width: 100%;
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+
+ box-sizing: border-box;
+  color: #e5e7eb;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: transparent;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid transparent;
+  box-shadow: none;
+
+  border-radius: 12px;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Hover activates glassy background */
+.card:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.02)
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  color : #20b187;
+}
+a{
+  text-decoration: none;
+}
+@media (max-width: 768px) { 
+  .card {
+    padding: 1rem 1rem; 
+    margin: 1.5rem auto; 
+
+  
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.02)
+    );
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    color: #20b187; 
+
+    
+    transition: none;
+  }
+
+  
+   @media (hover: none) and (pointer: coarse) {
+    .card:hover {
+      
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.02)
+      ); 
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+      color: #20b187;
+      transition: none;
+    }
+  } 
+}

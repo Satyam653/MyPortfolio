@@ -1,0 +1,45 @@
+.lottie-player {
+  background: transparent !important;
+}
+.achievement-header {
+  background: none !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.achievement-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #fff; /* or whatever fits your theme */
+}@media (max-width: 600px) {
+  .achievement-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
+.success {
+  display: flex;
+  flex-direction: row;       /* Make sure children are in a row */
+  align-items: center;       /* Vertically align items */
+  justify-content: space-between;
+  gap: 1rem;                 /* Adds space between image and text */
+  margin-top: 0.75rem;
+  flex-wrap: nowrap;        /* Prevent wrapping unless needed */
+}
+
+.achievements-pic {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 0;                 /* Remove auto margin that centers it vertically */
+}
+
+.success p {
+  flex: 1;
+  margin: 0;
+}
+

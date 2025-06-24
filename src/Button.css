@@ -1,0 +1,15 @@
+
+   .tech {
+  display: inline-block;
+  background-color:  rgba(32, 177, 135, 0.1); /* Light slate */
+  color: #20b187; /* Slate-500 */
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem;
+  border-radius: 9999px; /* Full rounded pill */
+  user-select: none;
+ 
+  
+}
+
