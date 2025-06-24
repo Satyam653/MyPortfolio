@@ -1,11 +1,11 @@
 import './Header.css';
-export default function Header({name,src}){
+export default function Header({name}){
     return(
         <header className="header">
   
     <div className="header-left-section">
           <div className="header-name">{name}</div>
-          <img className="header-pic" src={src} alt="Header Pic" />
+          <img className="header-pic" src="/photo.jpeg" alt="Header Pic" />
     </div>
     <p className="header-para">
       I build accessible, pixel-perfect digital <br />

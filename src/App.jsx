@@ -12,7 +12,7 @@ function App() {
    <>
     
    <div className = "layout">
-   <Header name = "Satyam Kumar" src = "/photo.jpeg"/>
+   <Header name = "Satyam Kumar" />
    <Content/>
 
    </div>
