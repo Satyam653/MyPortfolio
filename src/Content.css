@@ -4,18 +4,35 @@
   gap: 20px;
   margin-bottom: 3rem;
  
+}.lottie-player {
+  width: 90vw;
+  max-width: 500px;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .lottie-player {
+    width: 80vw;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lottie-player {
+    width: 100%;
+    max-width: 250px;
+  }
 }
 
 .section-gif {
   
   border-radius: 12px;
   object-fit: cover;
+
 }@media (max-width: 768px) {
   .section-with-gif {
     flex-direction: column;
     align-items: flex-start;
-    width : 5 rem;
-    height: 5 rem;
+    
   }
 
   .section-gif {
