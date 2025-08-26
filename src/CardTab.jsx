@@ -7,12 +7,14 @@ export default function CardTab() {
     'Express.js', 'Node.js', 'Mapbox', 'MongoDB',
     'REST API', 'Bootstrap', 'ejs', 'MVC Architecture', 'Passport.js'
   ];
+  const stockify = ['React.js','Material UI','Node.js','Jest','Express.js',
+    'Chart.js' ,'API Handling (Axios & Fetch)','Mongo DB'];
   const spotifyTech = ['HTML', 'CSS', 'Responsive Design'];
   const simonTech = ['JavaScript', 'HTML', 'CSS'];
 
   return (
     <>
-      <Card src="https://github.com/Satyam653/WANDERLUST">
+      <Card src="https://lnkd.in/gZNTHDpx">
         <h3>🚀 WanderLust</h3>
         <div>
           <img src="/assets/WanderLust.png" className="card-image" alt="WanderLust Project" />
@@ -26,6 +28,22 @@ export default function CardTab() {
           </p>
           <div className="tech-pill-container">
             {wanderTech.map((tech, index) => <Button key={index} name={tech} />)}
+          </div>
+        </div>
+      </Card>
+
+       <Card src="https://lnkd.in/gVnc8asR">
+        <h3>📈 Stockify</h3>
+        <div>
+          <img src="/assets/Stockify.png" className="card-image" alt="Stockify Project" />
+          <p className="card-para">
+            Stockify is a modern stock trading platform .
+            It replicates the clean UI/UX of a real trading app while focusing on frontend development,
+             with a functionality of Dashboard for purchasing and selling of Stocks 
+             ,backend integration, and API handling.
+          </p>
+          <div className="tech-pill-container">
+            {stockify.map((tech, index) => <Button key={index} name={tech} />)}
           </div>
         </div>
       </Card>
